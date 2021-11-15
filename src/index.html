@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>No new messages</title>
+	<script>
+	window.onload = () => {
+		var title = document.querySelector("title");
+		heading.addEventListener("load", (event) => {
+			setTimeout(function() {
+				title.innerText="One new message";
+			}, 3000);
+		});
+	}
+	</script>
     <meta
       name="description"
       content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
@@ -15,16 +25,4 @@
       <button class="button">Boom?</button>
     </div>
   </body>
-  <!--
-  <script>
-	window.onload = () => {
-		var title = document.querySelector("title");
-		heading.addEventListener("load", (event) => {
-			setTimeout(function() {
-				title.innerText="One new message";
-			}, 3000);
-		});
-	}
-  </script>
-  -->
 </html>
